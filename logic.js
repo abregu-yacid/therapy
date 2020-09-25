@@ -2,7 +2,7 @@ $(function(){
     insertUX();
     insertOptions();
     $("#navbar-option-mobile > button").on("click",toggleMobileOptions)
-    $("#btnSeeContact").on("click",scrollToUI);
+    $("#btnSeeContact").on("click",scrollToContact);
     
 })
 function toggleMobileOptions(){
@@ -41,8 +41,7 @@ function makeScrollToSection(section){
     };
 
 }
-const scrollToUI=makeScrollToSection("#grid-general-ui")
-const scrollToFrontend=makeScrollToSection("#grid-general-frontend");
+const scrollToContact=makeScrollToSection("#grid-general-contact");
 
 class SectionGeneral{
     constructor(obj){
@@ -122,7 +121,7 @@ function insertUX(){
         {title:"Anxiety",
         description:"Worrying is a part of life, but it doesn’t mean you have a disorder. Sometimes anxiety gets overwhelming, and you need to know how to control it. I will teach you how!", 
         directory:"services",
-            images:["Anxiety.jpg"]},
+            images:["anxiety.jpg"]},
         {title:"Stress",
         description:"There are difficult life situations that we all have to go through which can lead us to feel stressed. But if you don’t learn how to identify and address the stress that you experience in life, it can have a negative impact on you in the short-term and long-term. This is why it’s important to learn stress management strategies to help you stay healthy.", 
         directory:"services",
